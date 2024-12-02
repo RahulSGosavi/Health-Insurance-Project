@@ -2,6 +2,7 @@
 
 import pandas as pd
 import joblib
+import os
 model_path = os.path.join("ml-project-premium-prediction", "artifacts", "model_young.joblib")
 
 model_young = joblib.load("model_path")
