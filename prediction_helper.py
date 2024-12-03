@@ -2,12 +2,6 @@ import pandas as pd
 import joblib
 import os
 
-file_path = os.path.join('artifacts', 'model_young.joblib')
-if os.path.exists(file_path):
-    model = load(file_path)
-else:
-    raise FileNotFoundError(f"File '{file_path}' not found. Check the path and ensure the file exists.")
-model_young = joblib.load("artifacts/model_young.joblib")
 model_rest = joblib.load("artifacts/model_rest.joblib")
 scaler_young = joblib.load("artifacts/scaler_young.joblib")
 scaler_rest = joblib.load("artifacts/scaler_rest.joblib")
