@@ -3,8 +3,8 @@ import joblib
 
 import os
 import joblib
-model_path = os.path.join("artifacts", "model_young.joblib")
-
+model_path = "artifacts\\model_young.joblib".replace("\\", "/")
+model_young = joblib.load(model_path)
 model_young = joblib.load(r'model_path')
 model_rest = joblib.load(r'artifacts\model_rest.joblib')
 scaler_young = joblib.load(r'artifacts\scaler_young.joblib')
