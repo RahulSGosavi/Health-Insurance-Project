@@ -1,7 +1,7 @@
 import pandas as pd
 import joblib
 import os
-model_young = job.load("ml-project-premium-prediction\model_young.joblib")
+model_young = joblib.load("ml-project-premium-prediction\model_young.joblib")
 model_rest = joblib.load("artifacts/model_rest.joblib")
 scaler_young = joblib.load("artifacts/scaler_young.joblib")
 scaler_rest = joblib.load("artifacts/scaler_rest.joblib")
