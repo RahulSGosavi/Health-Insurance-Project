@@ -1,5 +1,6 @@
 import pandas as pd
 import joblib
+import os
 
 file_path = os.path.join('artifacts', 'model_young.joblib')
 if os.path.exists(file_path):
